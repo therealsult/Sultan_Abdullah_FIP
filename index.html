@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Wheels</title>
+<link href="css/main.css" rel="stylesheet">
+</head>
+<!-- students must convert divs to semantic tags -->
+<body>
+	<div id="container">
+        
+        <section id="header-con">
+            <header id="main-header" class="grid-con">
+                <div class="logo">
+                    <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo">
+                </div>
+
+                    <nav id="main-nav">
+                        <h2 class="hidden">Main Navigation</h2>
+                        <ul>
+                            <li><a class="active" href="index.html">Homepage</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+               
+                <div class="socail-media">
+                    <img src="images/social-media.svg"> 
+                </div>
+            </header>
+        </section> 
+
+        <main>
+            <div class="grid-con" id="hero">
+                <div id="hero-text">
+                    <h2>Praesent pellentesque felis quis nunc accumsan maximus</h2>
+
+                        <p>Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat bibendum est ornare, nec tempor diam pellentesque. Curabitur aliquet tincidunt pulvinar. Curabitur elit orci, blandit auctor fringilla quis, tempor dapibus enim. Mauris pharetra metus ut metus vehicula volutpat. Nulla vel iaculis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
+                </div>
+                <img src="images/main_hero_img.jpg" alt="Nascar Race Car" id="hero-image">
+                <button>About Us</button>
+            </div>  
+
+            <div class="grid-con" id="products">
+                <h2>View Gallery</h2>
+                <div class="product-box" id="product1">
+                    <img src="https://via.placeholder.com/536x242" alt="image">
+                </div>
+                <div class="product-box" id="product2">
+                    <img src="https://via.placeholder.com/536x242" alt="image">
+                </div>
+                <div class="product-box" id="product3">
+                    <img src="https://via.placeholder.com/536x242" alt="image">
+                </div>
+            </div>
+
+            <h2 id="about-title">Our Top Picks</h2>
+            <div id="about-con">
+                <div class="grid-con" id="about">
+                    <div id="about-text">
+                        <h2>Praesent pellentesque felis quis nunc accumsan maximus</h2>
+                        <p>Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat bibendum est ornare, nec tempor diam pellentesque. Curabitur aliquet tincidunt pulvinar.</p>
+                    </div>
+                    <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
+                </div>
+            </div>
+            
+            <div class="grid-con" id="contact">
+                <div id="contact-text">
+                    <h2>Feel free to contact us</h2>
+                    <p>bus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
+            s</div>
+
+                <section id="contact-form">
+
+                    <h3 class="hidden">Contact Us Form</h3>
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="First & Last Name">
+
+                        <input name="contactInfo" type="text" required placeholder="Email">
+
+                        <input name="contactInfo" type="text" required placeholder="Phone">
+
+                        <textarea name="msg" placeholder="Message"></textarea>
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                    
+                </section>
+            </div> 
+        </main>
+
+        <footer id="footer-con">
+            <div class="grid-con" id="footer">
+                <div id="footer-logo">
+                    <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo">
+                </div>
+                    <section id="footer-nav">
+                        <nav id="footer-nav">
+                            <h2 class="hidden">Main Navigation</h2>
+                            <ul>
+                                <li><a class="active" href="index.html">Homepage</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                <div id="footer-newsletter1">
+                    <input name="contactInfo" type="text" required placeholder="Email">
+                </div>
+                <div id="footer-newsletter2">
+                    <input name="submit" type="submit" value="Send">
+                </div>
+                <div id="footer-social">
+                    <p>Copyright © 2022 Mini Wheels Inc.
+
+                        All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    </div> 
+</body>
+</html>

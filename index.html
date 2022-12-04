@@ -6,112 +6,128 @@
 <link href="css/main.css" rel="stylesheet">
 </head>
 <!-- students must convert divs to semantic tags -->
+
+
 <body>
 	<div id="container">
         
         <section id="header-con">
-            <header id="main-header" class="grid-con">
+            <header id="main-header" class="grid-con-1">
                 <div class="logo">
-                    <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo">
+                   <a href="index.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
                 </div>
 
-                    <nav id="main-nav">
-                        <h2 class="hidden">Main Navigation</h2>
-                        <ul>
-                            <li><a class="active" href="index.html">Homepage</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                        </ul>
-                    </nav>
+                <nav class="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dot"></div>
+                  </nav>
                
-                <div class="socail-media">
+                <div class="social-media">
                     <img src="images/social-media.svg"> 
                 </div>
             </header>
-        </section> 
+        </section>
 
         <main>
-            <div class="grid-con" id="hero">
+            <section class="grid-con-2" id="hero">
                 <div id="hero-text">
                     <h2>Praesent pellentesque felis quis nunc accumsan maximus</h2>
 
-                        <p>Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat bibendum est ornare, nec tempor diam pellentesque. Curabitur aliquet tincidunt pulvinar. Curabitur elit orci, blandit auctor fringilla quis, tempor dapibus enim. Mauris pharetra metus ut metus vehicula volutpat. Nulla vel iaculis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
+                            <p>Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat bibendum est ornare, nec tempor diam pellentesque. Curabitur aliquet tincidunt pulvinar. Curabitur elit orci, blandit auctor fringilla quis, tempor dapibus enim. Mauris pharetra metus ut metus vehicula volutpat. Nulla vel iaculis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
+                      <a href="#about-title-1"><button class="i-link" >More</button></a>
                 </div>
-                <img src="images/main_hero_img.jpg" alt="Nascar Race Car" id="hero-image">
-                <button>About Us</button>
-            </div>  
+                <div id="home-hero-img">
+                <img src="images/main_hero_img.jpg" alt="image" id="hero-image">
+                </div>
 
-            <div class="grid-con" id="products">
-                <h2>View Gallery</h2>
-                <div class="product-box" id="product1">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+            </section>  
+                
+                <h2 id="about-title">View Gallery</h2>
+            <div class="grid-con-2" id="products">
+                
+                <div class="gallery-box" id="box1">
+                    <img src="images/re-sized-monte-image.jpg" alt="Broze Monte">
+                    <h2>Hello test #1</h2>
+                    <p>hello test #2</p>
                 </div>
-                <div class="product-box" id="product2">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="gallery-box" id="box2">
+                    <img src="images/re-sized_camero-image.jpg" alt="Yellow Camero">
+                    <h2>Hello test #1</h2>
+                    <p>hello test #2</p>
                 </div>
-                <div class="product-box" id="product3">
-                    <img src="https://via.placeholder.com/536x242" alt="image">
+                <div class="gallery-box" id="box3">
+                    <img src="images/re-sized_lambo-image.jpg" alt="Yellow Lambo">
+                    <h2>Hello test #1</h2>
+                    <p>hello test #2</p>
                 </div>
             </div>
 
-            <h2 id="about-title">Our Top Picks</h2>
+                <h2 id="about-title-1">View More Success Stories</h2>
             <div id="about-con">
-                <div class="grid-con" id="about">
+                <div class="grid-con-2" id="about">
                     <div id="about-text">
                         <h2>Praesent pellentesque felis quis nunc accumsan maximus</h2>
                         <p>Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat bibendum est ornare, nec tempor diam pellentesque. Curabitur aliquet tincidunt pulvinar.</p>
+
+                    <a href="gallery.html" style="color: #000 ;" ><button class="gallery-btn" >gallery</button></a>
+                    <!-- gallery-btn color change not working in HTML or CSS ^ -->
+                     
                     </div>
-                    <img src="https://via.placeholder.com/674x700" alt="image" id="about-image">
+                    <img src="images/top_picks-wrapper.png" alt="image" id="about-image">
                 </div>
             </div>
             
             <div class="grid-con" id="contact">
                 <div id="contact-text">
-                    <h2>Feel free to contact us</h2>
+                    <h2 id="contact-sec">Feel free to contact us</h2>
                     <p>bus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
-            s</div>
+            </div>
 
-                <section id="contact-form">
+            <div class="formCon">  
+                <form id="contact-2" action="" method="post">
+                  <h3>Mini Wheels Quick Contact Form</h3>
+                  <h4>Contact us for a custom quote</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                  </fieldset>
+                </form>
+              </div>
 
-                    <h3 class="hidden">Contact Us Form</h3>
-                    <form action="email.php" method="POST" enctype="text/plain">
-                        <input name="fullName" type="text" placeholder="First & Last Name">
-
-                        <input name="contactInfo" type="text" required placeholder="Email">
-
-                        <input name="contactInfo" type="text" required placeholder="Phone">
-
-                        <textarea name="msg" placeholder="Message"></textarea>
-                        <input name="submit" type="submit" value="Send">
-                    </form>
-                    
-                </section>
-            </div> 
         </main>
 
         <footer id="footer-con">
-            <div class="grid-con" id="footer">
+            <div class="grid-con-1" id="footer">
                 <div id="footer-logo">
-                    <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo">
+                    <a href="index.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
                 </div>
-                    <section id="footer-nav">
-                        <nav id="footer-nav">
-                            <h2 class="hidden">Main Navigation</h2>
-                            <ul>
-                                <li><a class="active" href="index.html">Homepage</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </nav>
-                    </section>
+ 
+                        <nav class="footerMenu">
+                            <a href="index.html">Home</a>
+                            <a href="gallery.html">Gallery</a>
+                            <div class="dot"></div>
+                          </nav>
+                 
                 <div id="footer-newsletter1">
-                    <input name="contactInfo" type="text" required placeholder="Email">
+                    <input type="text" class="email-2 formEntry" placeholder="Email"/>
                 </div>
                 <div id="footer-newsletter2">
-                    <input name="submit" type="submit" value="Send">
+                    <button class="submit-2 formEntry" onclick="thanks()">Submit</button>
                 </div>
                 <div id="footer-social">
-                    <p>Copyright © 2022 Mini Wheels Inc.
-
-                        All rights reserved</p>
+                    <img src="images/social-media.svg">
                 </div>
             </div>
         </footer>

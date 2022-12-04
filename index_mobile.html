@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Mini Wheels</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
 <!-- students must convert divs to semantic tags -->
@@ -11,62 +11,110 @@
         
         <div id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                 </div>
+                <div class="logo">
+                <a href="index_mobile.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
+                </div> 
+                <div id="mobile-nav">
+                    <section class="top-nav">
+                        <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                        <ul class="menu">
+                          <li><a href="index_mobile.html">Homepage</a></li>
+                          <li><a href="gallery_mobile.html">Gallery</a></li>
+        
+                        </ul>
+                    </section>
+                    </div>
             </div>    
         </div> 
 
         <main>
-            <div id="hero-con">
+            <section id="hero-con">
                 <div class="grid-con">
-                    <div id="hero-text" class="box-color">
+                    <div id="hero-text">
+                        <H2>Hello testing</H2>
+                        <p>Hello testing #2</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
-                <img src="https://via.placeholder.com/428x240" alt="image">
+            <section id="image-slider-con">
+                <h2>Our Top Picks</h2>
+                <img src="images/mobile-lambo-image.jpg" alt="image">
                 <!-- ascii symbols for <> -->
                 <span id="mobile-slider-left">&#60</span>
                 <span id="mobile-slider-right">&#62</span>
+                
+            </section>
+            <div id="image-slider-text">
+                <h2>Hello test #1</h2>
+                <p>test #2</p>
             </div>
 
-            <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
-                    <div id="about-us-text-con">     
+            <section id="about-us-con">
+                <h2>View More Success Stories</h2>   
+                    <div id="about-us-text-con"> 
+
                         <div class="grid-con">
-                            <div id="about-us-text" class="box-color">
+                            <div id="about-us-text">
+                                <h2>Praesent pellentesque felis quis</h2> 
+                                <p>nunc accumsan maximus
+                                Afficitur sit amet. Proin nec cursus nulla. Vivamus mattis erat</p>
+                                   
                             </div>
                         </div>      
                     </div>  
                     <div class="grid-con" id="about-us-photos">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
+                        <img src="images/yellow_monte-mobile.jpg" alt="Yellow Monte" class="about-us-photo">
+                        <img src="images/yellow_lambo-mobile.jpg" alt="Yellow Lambo" class="about-us-photo">
+                        <img src="images/mothers_truck-mobile.jpg" alt="Mothers" class="about-us-photo">
+                        <img src="images/ford-coupe-mobile.jpg" alt="Truck" class="about-us-photo">
                     </div>         
-            </div>
+            </section>
 
             <div id="contact-us-con">
-                <div class="grid-con">
-                    <div id="contact-text" class="box-color">
-                    </div>
-                    <div id="contact-form" class="box-color">
-                    </div>
-                </div>
+                <div id="contact-text">
+                    <h2 id="contact-sec">Feel free to contact us</h2>
+                    <p>bus orci luctus et ultrices posuere cubilia curae; Nam consectetur neque nulla, vel vulputate nisi varius a. Vestibulum sit amet libero eget eros mattis pellentesque.</p>
             </div>
+
+            <div class="formCon">  
+                <form id="contact-2" action="" method="post">
+                  <h3>Mini Wheels Quick Contact Form</h3>
+                  <h4>Contact us for a custom quote</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                  </fieldset>
+                </form>
+              </div>
         </main>
 
         <div id="footer-con">
             <div class="grid-con">
                 <div id="footer-box">
+                    <a href="index_mobile.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
+
                 </div>
                 <div id="footer-newsletter">
+                    <p>Signup to our newsletter</p>
+                        <input type="text" class="email-2 formEntry" placeholder="Email"/>
+                 
+                        <button class="submit-2 formEntry" onclick="thanks()">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>

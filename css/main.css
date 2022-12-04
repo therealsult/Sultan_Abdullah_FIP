@@ -1,5 +1,36 @@
 @charset "UTF-8";
-/* CSS Document */
+/*html selectors*/
+/* russo-one-regular - latin */
+@font-face {
+	font-family: 'Russo One';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/russo-one-v14-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/russo-one-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/russo-one-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/russo-one-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/russo-one-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/russo-one-v14-latin-regular.svg#RussoOne') format('svg'); /* Legacy iOS */
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+body p {
+	font-family: 'Russo One';
+	font-size: 30px;
+}
+
+h1 {
+	font-family: 'Russo One';
+	font-size: 64px;
+}
+
+h2 {
+	font-family: 'Russo One';
+	font-size: 56px;
+}
 
 /*Remove this rule on your HTML elements as you start to fill them with content*/
 
@@ -25,12 +56,7 @@ img {
 	padding: 0; 
 }
 
-/*html selectors*/
 
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-}
 
 /* Remove underlines from links */
 
@@ -58,18 +84,50 @@ you work on and the intended audience */
 }
 
 /* this is our grid based off of our XD file */
+.logo img {
+	height: 64px;
+	width:auto;
+	margin-top:18px;
+
+}
+
 .grid-con {
 	display: grid;
 	grid-template-columns: repeat(12, 122px);
 	grid-column-gap: 16px;
 	padding-left: 140px;
 	padding-right: 140px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
+}
+
+.grid-con-2 {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
+}
+
+.grid-con-1 {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #9f1b199f;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 36px;
+	
 }
 
 #header-box1 {
@@ -78,10 +136,188 @@ you work on and the intended audience */
 	height: 80px;
 }
 
+
+
+
 #main-nav {
-	grid-column: 3/11;
-	/* Remove as content will dictate height */
-	height: 80px;
+	grid-column: 4/11;
+	margin:0;
+	margin-top:10px;
+	margin-left:230px;
+	height:90px;
+ }
+ 
+ * {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ 
+ 
+ .navMenu {
+	 font-family: "Montserrat";
+ 	grid-column: 4/11;
+	margin:0;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	margin-left: 200px;
+	
+   
+ }
+ 
+ .navMenu a {
+	 
+   color: #f6f4e6;
+   text-decoration: none;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   font-weight: 500;
+   display: inline-block;
+   width: 80px;
+   margin-left: 50px;
+   margin-right: 50px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+ 
+ .navMenu a:hover {
+   color: #000000;
+ }
+ 
+ .navMenu .dot {
+   width: 120px;
+   height: 6px;
+   background: #ffffff;
+   border-radius: 0%;
+   opacity: 0;
+   -webkit-transform: translateX(30px);
+   transform: translateX(30px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   margin-left: 60px;
+   margin-right: 50px;
+ }
+ 
+ .navMenu a:nth-child(1):hover ~ .dot {
+   -webkit-transform: translateX(30px);
+   transform: translateX(0px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   opacity: 1;
+  
+ }
+ 
+ .navMenu a:nth-child(2):hover ~ .dot {
+   -webkit-transform: translateX(110px);
+   transform: translateX(190px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   opacity: 1;
+   width: 190px;
+   height: 6px;
+ }
+ 
+
+/* footer-nav css begins here */
+
+
+#footerMenu {
+	grid-column: 4/11;
+	
+	
+	margin-left:230px;
+	
+	
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   font-size: 36px;
+   
+ }
+ 
+ 
+ 
+ .footerMenu {
+	 font-family: "Montserrat";
+ 	grid-column: 4/11;
+	margin:0;
+	
+	padding-bottom: 10px;
+	margin-left: 200px;
+	
+   
+ }
+ 
+ .footerMenu a {
+	 
+   color: #f6f4e6;
+   text-decoration: none;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   font-weight: 500;
+   display: inline-block;
+   width: 80px;
+   margin-left: 50px;
+   margin-right: 50px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+ 
+ .footerMenu a:hover {
+   color: #000000;
+ }
+ 
+ .footerMenu .dot {
+   width: 120px;
+   height: 6px;
+   background: #ffffff;
+   border-radius: 0%;
+   opacity: 0;
+   -webkit-transform: translateX(30px);
+   transform: translateX(30px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   margin-left: 60px;
+   margin-right: 50px;
+ }
+ 
+ .footerMenu a:nth-child(1):hover ~ .dot {
+   -webkit-transform: translateX(30px);
+   transform: translateX(0px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   opacity: 1;
+  
+ }
+ 
+ .footerMenu a:nth-child(2):hover ~ .dot {
+   -webkit-transform: translateX(110px);
+   transform: translateX(190px);
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   opacity: 1;
+   width: 190px;
+   height: 6px;
+ }
+ 
+
+	
+/* footer-nav css ends here */
+
+
+
+
+#home-hero-img {
+	grid-column: 8/11;
+	position: relative;
+}
+
+.social-media {
+margin-top: 32px;
 }
 
 #header-box2 {
@@ -97,20 +333,67 @@ you work on and the intended audience */
 }
 
 #hero-text {
-	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 582px;
+	grid-column: 2/7;
 }
 
-#hero-image {
-	grid-column: 8/-1;
-	/* Remove as content will dictate height */
-	height: 582px;
+.i-link {
+	position: relative;
+	height: 48px;
+	width: 200px;
+	color: rgb(0, 0, 0);
+	background-color: #C6F218;
+	font-size: 28px;
+	font-family: "Russo One";
+	border-radius: 5px;
+	border:0;
+	margin-top: 100px;
+	margin-bottom: 45px;
 }
+	  
+.i-link:hover {
+	background:#CC4949;
+	transform: translateY(-3px);
+	transition: ease 0.5s;
+	border-top: 5px solid #0e3750;
+	border-radius: 0%;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	-webkit-text-fill-color: white;
+}
+
+.gallery-btn{
+	position: relative;
+	height: 48px;
+	width: 200px;
+	background-color: #C6F218;
+	font-size: 28px;
+	font-family: "Russo One";
+	border-radius: 5px;
+	border:0;
+	margin-top: 100px;
+	margin-bottom: 45px;
+}
+
+.gallery-btn:link{
+	color: #000;
+	text-decoration: #000;
+}
+/* gallery-btn color change not working in HTML or CSS ^ */	  
+
+
+.gallery-btn:hover {
+	background:#CC4949;
+	transform: translateY(-3px);
+	transition: ease 0.5s;
+	border-top: 5px solid #0e3750;
+	border-radius: 0%;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	-webkit-text-fill-color: white;
+}
+
 
 #products {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 30px;
+	margin-bottom: 90px;
 }
 
 #products h2 {
@@ -141,7 +424,8 @@ you work on and the intended audience */
 }
 
 #about-con {
-	background-image: url(../images/gold_monte_wrapper_img.jpg);
+	height: auto;
+	background: url(../images/gold_monte_wrapper_main.jpg) no-repeat center;
 	background-color: #ddd;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -149,12 +433,22 @@ you work on and the intended audience */
 
 #about-title {
 	text-align: center;
+	font-size: 56px;
+	-webkit-text-fill-color: rgb(0, 0, 0);
+	margin-top: 90px;
+}
+
+#about-title-1 {
+	text-align: center;
+	font-size: 56px;
+	-webkit-text-fill-color: rgb(0, 0, 0);
+	margin-bottom: 30px;
 }
 
 #about-text {
-	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 700px;
+	grid-column: 2/7;
+	-webkit-text-fill-color: #fff;
+	text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 #about-image {
@@ -166,12 +460,185 @@ you work on and the intended audience */
 #contact {
 	margin-top: 100px;
 	margin-bottom: 100px;
+	height: 650px;
+}
+
+
+
+
+
+
+.formCon {
+  width: 800px;
+  margin-left: 250px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 16px/20px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	padding: 25px;
+	padding-top: 85px;
+}
+#contact-2 {
+	margin-right: 150px;
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Russo One";
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Russo One";
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+
+#contact button[type="submit"] {
+	position: relative;
+	height: 48px;
+	width: 200px;
+	color: rgb(0, 0, 0);
+	background-color: #C6F218;
+	font-size: 28px;
+	font-family: "Russo One";
+  width: 100%;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#contact button[type="submit"]:hover {
+	background:#CC4949;
+	transform: translateY(-3px);
+	transition: ease 0.5s;
+	border-top: 5px solid #0e3750;
+	border-radius: 0%;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	-webkit-text-fill-color: white;
+
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: rgb(116, 69, 69);
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+
+/* Submit Button CSS */
+#submit-1 {
+	position: relative;
+	height: 48px;
+	width: 200px;
+	color: rgb(0, 0, 0);
+	background-color: #C6F218;
+	font-size: 28px;
+	font-family: "Russo One";
+  width: 100%;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  
+}
+
+
+#submit-1:hover { 
+	background:#CC4949;
+	transform: translateY(-3px);
+	transition: ease 0.5s;
+	border-top: 5px solid #0e3750;
+	border-radius: 0%;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	-webkit-text-fill-color: white;
+
+}
+
+
+#contact-sec {
+	font-size: 64px;
 }
 
 #contact-text {
-	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 700px;
+	grid-column: 2/7;
+	font-size: 38px;
 }
 
 #contact-form {
@@ -183,9 +650,9 @@ you work on and the intended audience */
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-color: #9f1b199f;
 	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 #footer-logo {
@@ -194,12 +661,7 @@ you work on and the intended audience */
 	height: 80px;
 }
 
-#footer-nav {
-	grid-column: 3/-1;
-	/* Remove as content will dictate height */
-	height: 80px;
-	margin-bottom: 100px;
-}
+
 
 #footer-newsletter1 {
 	grid-column: 1/5;
@@ -217,23 +679,93 @@ you work on and the intended audience */
 	grid-column: 11/-1;
 	/* Remove as content will dictate height */
 	height: 80px;
+	margin-top: 80px;
 }
+
+.submit-2 {
+	position: relative;
+	height: 48px;
+	width: 200px;
+	color: rgb(0, 0, 0);
+	background-color: #C6F218;
+	font-size: 28px;
+	font-family: "Russo One";
+	border-radius: 5px;
+	border:0;
+	margin-top: 100px;
+	margin-bottom: 45px;
+  }
+  
+  .submit-2:hover {
+	background:#CC4949;
+	transform: translateY(-3px);
+	transition: ease 0.5s;
+	border-top: 5px solid #0e3750;
+	border-radius: 0%;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	-webkit-text-fill-color: white;
+
+  }
+
+  .email-2 {
+	position: relative;
+	margin-right: 260px;
+	background-color: #ebebeb;
+	height: 48px;
+	width: 500px;
+	font-size: 24px;
+	font-family: "Russo One";
+	margin-top: 100px;
+	margin-bottom: 45px;
+	padding-left: 10px;
+	
+  }
+  
+  .email-2:hover {
+	border-bottom: 5px solid #0e3721;
+	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+	transform: translateY(-3px);
+	width: 500px;
+	transition: ease 0.5s;
+	border-radius: 0%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* gallery page */
 
-#gallery-hero-con {
-	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/1920x580");
-	height: 580px;
-}
+  #gallery-hero-con {
+	background: url(../images/gallery-background-img2.jpg) no-repeat center;
+	width: 1920px;
+	height: auto;
+  }
 
-#gallery-text {
-	grid-column: 1/9;
-	/* Remove as content will dictate height */
-	height: 200px;
-	margin-top: 100px;
+  #gallery-text{
+	grid-column: 2/7;
+	font-size: 38px;
+	-webkit-text-fill-color: #fff;
+	text-shadow: 2px 2px rgb(0, 0, 0);
+	margin-top: 90px;
+	
+  }
+
+
+#gallery-title{
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 30px;
 }
 
 #gallery-controls {
@@ -252,6 +784,8 @@ you work on and the intended audience */
 	margin: 5px;
   }
 
+
+
 #gallery h2 {
 	grid-column: 1/-1;
 	text-align: center;
@@ -263,4 +797,22 @@ you work on and the intended audience */
 	/* Remove as content will dictate height */
 	height: 507px;
 	margin-bottom: 20px;
+}
+
+#box1 {
+	background-color: #F1E07E;
+	border-radius: 15px;
+	text-align: center;
+}
+
+#box2 {
+	background-color: #ECC209;
+	border-radius: 15px;
+	text-align: center;
+}
+
+#box3 {
+	background-color: #F1E07E;
+	border-radius: 15px;
+	text-align: center;
 }

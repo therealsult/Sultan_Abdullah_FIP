@@ -11,12 +11,22 @@
         
         <div id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                 </div>
+                <div class="logo">
+                <a href="index_mobile.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
+                </div> 
+                <div id="mobile-nav">
+                    <section class="top-nav">
+                        <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                        <ul class="menu">
+                          <li><a href="index_mobile.html">Homepage</a></li>
+                          <li><a href="gallery_mobile.html">Gallery</a></li>
+        
+                        </ul>
+                    </section>
+                    </div>
             </div>    
         </div> 
 
@@ -59,13 +69,19 @@
         <div id="footer-con">
             <div class="grid-con">
                 <div id="footer-box">
+                    <a href="index_mobile.html"> <img src="images/MiniWheels-Logo-1.svg" alt="Mini Wheels logo"></a>
+
                 </div>
                 <div id="footer-newsletter">
-                </div>
-                <div id="footer-newsletter2">
+                    <p>Signup to our newsletter</p>
+                        <input type="text" class="email-2 formEntry" placeholder="Email"/>
+                 
+                        <button class="submit-2 formEntry" onclick="thanks()">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+
+    </div>
 </body>
 </html>

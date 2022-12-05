@@ -848,32 +848,42 @@ fieldset {
 
 
 #gallery h2 {
-	grid-column: 1/-1;
 	text-align: center;
+	grid-column: 1/-1;
+	margin-top: 10px;
+	margin-bottom: 10px;
   }
 
 .gallery-box {
 	background-color: #ddd;
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
-	height: 507px;
-	margin-bottom: 20px;
+	height: 550px;
+	margin-bottom: 30px;
 }
 
-#box1 {
+.gallery-box img:hover{
+	cursor: pointer;
+}
+
+#box1, #box3 {
 	background-color: #F1E07E;
 	border-radius: 15px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 #box2 {
 	background-color: #ECC209;
 	border-radius: 15px;
 	text-align: center;
+
 }
 
-#box3 {
-	background-color: #F1E07E;
-	border-radius: 15px;
-	text-align: center;
+
+
+#box1 p, #box2 p, #box3 p {
+	padding-left: 8px;
+	padding-right: 8px;
+
 }

@@ -346,9 +346,6 @@ margin-top: 32px;
 
 /* Specific to index page desktop  */
 
-#hero {
-	margin-top: 100px;
-}
 
 #hero-text {
 	grid-column: 2/7;
@@ -480,10 +477,11 @@ margin-top: 32px;
 }
 
 #contact {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	
 	height: 650px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	padding: 25px;
+	padding-top: 70px;
+	padding-bottom: 50px;
 }
 
 
@@ -508,13 +506,7 @@ margin-top: 32px;
   font: 400 20px/24px "Roboto", Helvetica, Arial, sans-serif;
 }
 
-#contact {
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	padding: 25px;
-	padding-top: 70px;
-	padding-bottom: 50px;
-	
-}
+
 #contact-2 {
 	margin-right: 150px;
 	background: #F9F9F9;
@@ -798,10 +790,17 @@ fieldset {
 
 
 
-/* gallery page */
+
+
+
+
+
+
+
+/* gallery page / PAGE #2*/
 
   #gallery-hero-con {
-	background: url(../images/gallery-background-img2.jpg) no-repeat top;
+	background: url(../images/gallery-background-img2.jpg) no-repeat center;
 	width: 1920px;
 	height: auto;
   }
@@ -811,7 +810,8 @@ fieldset {
 	font-size: 38px;
 	-webkit-text-fill-color: #fff;
 	text-shadow: 2px 2px rgb(0, 0, 0);
-	margin-top: 180px;
+	margin-top: 60px;
+	height: 322px;
 	
   }
 

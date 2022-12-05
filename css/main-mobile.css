@@ -294,6 +294,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-weight: bold;
 	text-shadow: 2px 2px rgb(0, 0, 0);
 	top: 180px;
+	margin-bottom: 78px;
   }
 
 
@@ -347,21 +348,52 @@ you work on and the intended audience, we may go as low as 320px */
 
 #mobile-slider-left {
 	position: absolute;
-	left: 0;
-	font-size: 120px;
-	color:#fff;
+	left: 10px;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: "Russo One";
+	color:rgb(161, 0, 0);
 	top: 200px;
-	margin-top: 10px;
+	margin-top: 60px;
+	border: #000 solid 4px;
+	border-radius: 50pc;
+	background-color: #C6F218;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	
+}
+
+#mobile-slider-left:hover {
+	background-color: #fff;
+	border-left: #0e3750 solid 7px ;
+	transition: 00.8s;
+	
 }
 
 #mobile-slider-right {
 	position: absolute;
-	right: 0;
-	font-size: 120px;
-	color:#fff;
+	right: 10px;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: "Russo One";
+	color:rgb(161, 0, 0);
 	top: 200px;
-	margin-top: 10px;
+	margin-top: 60px;
+	border: #000 solid 4px;
+	border-radius: 50pc;
+	background-color: #C6F218;
+	width: 50px;
+	height: 50px;
+	text-align: center;
 }
+
+#mobile-slider-right:hover {
+	background-color: #fff;
+	border-right: #0e3750 solid 7px ;
+	transition: 00.8s;
+}
+
 
 #about-us-con h2 {
 	background-color: #ffffff00;
@@ -707,7 +739,7 @@ fieldset {
 #hero-gallery-text {
 	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 380px;
+	height: 480px;
 	margin-top: 20px;
 	grid-column: 1/-1;
 	text-align: center;
@@ -716,6 +748,7 @@ fieldset {
 	font-weight: bold;
 	text-shadow: 2px 2px rgb(0, 0, 0);
 	top: 180px;
+	padding-bottom: 30px;
 }
 
 #hero-gallery-text h2 {

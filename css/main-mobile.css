@@ -352,7 +352,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-size: 40px;
 	font-weight: 900;
 	font-family: "Russo One";
-	color:rgb(161, 0, 0);
+	color:rgb(255, 255, 255);
 	top: 200px;
 	margin-top: 60px;
 	border: #000 solid 4px;
@@ -365,10 +365,10 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #mobile-slider-left:hover {
-	background-color: #fff;
+	background-color: #CC4949;
 	border-left: #0e3750 solid 7px ;
-	transition: 00.8s;
-	
+	transition: ease 00.5s;
+	cursor:pointer;
 }
 
 #mobile-slider-right {
@@ -377,7 +377,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-size: 40px;
 	font-weight: 900;
 	font-family: "Russo One";
-	color:rgb(161, 0, 0);
+	color:#fff;
 	top: 200px;
 	margin-top: 60px;
 	border: #000 solid 4px;
@@ -389,11 +389,15 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #mobile-slider-right:hover {
-	background-color: #fff;
+	background-color: #CC4949;
 	border-right: #0e3750 solid 7px ;
-	transition: 00.8s;
+	transition: ease 00.5s;
+	cursor:pointer;
 }
 
+.gallery-box img:hover{
+	cursor: pointer;
+}
 
 #about-us-con h2 {
 	background-color: #ffffff00;
@@ -669,7 +673,7 @@ fieldset {
 }
 
 #footer-newsletter {
-	margin-top: 110px;
+	margin-top: 120px;
 	margin-bottom:20px;
 	font-size: 20px;
 
@@ -687,7 +691,8 @@ fieldset {
 	font-family: "Russo One";
 	border-radius: 5px;
 	border:0;
-	
+	margin-top: 5px;
+	margin-bottom: 20px;
 	
   }
   
@@ -711,7 +716,7 @@ fieldset {
 	width: 360px;
 	font-size: 24px;
 	font-family: "Russo One";
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	padding-left: 15px;
 	
@@ -726,7 +731,23 @@ fieldset {
 	border-radius: 0%;
   }
 
-/* gallery page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallery page / PAGE#2 */
 
 #hero-gallery-con {
 	background-color: #aaaaaa;
@@ -738,9 +759,8 @@ fieldset {
 
 #hero-gallery-text {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 480px;
-	margin-top: 20px;
+
+
 	grid-column: 1/-1;
 	text-align: center;
 	color: white;
@@ -780,44 +800,48 @@ fieldset {
 #gallery h2 {
 	text-align: center;
 	grid-column: 1/-1;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .gallery-box {
 	grid-column: 1/-1;
 	background-color: #F1E07E;
 	/* Remove as content will dictate height */
-	height: 507px;
-	margin-bottom: 20px;
+	height: auto;
+	margin-bottom: 30px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
+	padding-bottom: 20px;
 }
 
 .gallery-box p {
 	padding-left: 8px;
 	padding-right: 8px;
-	padding-bottom: 8px;
+
+	
 }
 
 .gallery-box-2 {
 	grid-column: 1/-1;
 	background-color: #ECC209;
 	/* Remove as content will dictate height */
-	height: 507px;
-	margin-bottom: 20px;
+	height: 460px;
+	margin-bottom: 30px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
+	padding-bottom: 20px;
 }
 
 .gallery-box-2 p {
 	padding-left: 8px;
 	padding-right: 8px;
-	padding-bottom: 8px;
+
+	
 }
 
 #footer-newsletter2 {

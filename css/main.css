@@ -139,6 +139,11 @@ you work on and the intended audience */
 
 
 
+
+
+
+/* Main menu begins */
+
 #main-nav {
 	grid-column: 4/11;
 	margin:0;
@@ -219,9 +224,17 @@ you work on and the intended audience */
    height: 6px;
  }
  
+/* Main menu ends */
+
+
+
+
+
+
+
+
 
 /* footer-nav css begins here */
-
 
 #footerMenu {
 	grid-column: 4/11;
@@ -304,9 +317,13 @@ you work on and the intended audience */
    height: 6px;
  }
  
-
-	
 /* footer-nav css ends here */
+
+
+
+
+
+
 
 
 
@@ -314,6 +331,7 @@ you work on and the intended audience */
 #home-hero-img {
 	grid-column: 8/11;
 	position: relative;
+	padding-top: 50px;
 }
 
 .social-media {
@@ -334,6 +352,7 @@ margin-top: 32px;
 
 #hero-text {
 	grid-column: 2/7;
+	padding-top: 25px;
 }
 
 .i-link {
@@ -358,6 +377,7 @@ margin-top: 32px;
 	border-radius: 0%;
 	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
 	-webkit-text-fill-color: white;
+	cursor:pointer;
 }
 
 .gallery-btn{
@@ -388,12 +408,14 @@ margin-top: 32px;
 	border-radius: 0%;
 	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
 	-webkit-text-fill-color: white;
+	cursor:pointer;
 }
 
 
 #products {
 	margin-top: 30px;
 	margin-bottom: 90px;
+	padding-top: 60px;
 }
 
 #products h2 {
@@ -460,6 +482,7 @@ margin-top: 32px;
 #contact {
 	margin-top: 100px;
 	margin-bottom: 100px;
+	
 	height: 650px;
 }
 
@@ -467,6 +490,10 @@ margin-top: 32px;
 
 
 
+
+
+
+/* contact form begins */
 
 .formCon {
   width: 800px;
@@ -478,64 +505,67 @@ margin-top: 32px;
 #contact input[type="tel"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 16px/20px "Roboto", Helvetica, Arial, sans-serif;
+  font: 400 20px/24px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 #contact {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	padding: 25px;
-	padding-top: 85px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	
 }
 #contact-2 {
 	margin-right: 150px;
-  background: #F9F9F9;
-  padding: 25px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	background: #F9F9F9;
+	padding: 25px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
 }
 
 #contact h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  font-family: "Russo One";
+	display: block;
+	font-size: 32px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	font-family: "Russo One";
 }
 
 #contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  font-family: "Russo One";
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: "Russo One";
 }
 
 fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
 }
 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
 }
 
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #aaa;
 }
 
 
@@ -547,15 +577,15 @@ fieldset {
 	background-color: #C6F218;
 	font-size: 28px;
 	font-family: "Russo One";
-  width: 100%;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+	width: 100%;
+	border-radius:5px;
+	border:0;
+	cursor:pointer;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
 }
 
 #contact button[type="submit"]:hover {
@@ -596,6 +626,12 @@ fieldset {
   color: #888;
 }
 
+/* contact form ends */
+
+
+
+
+
 
 
 /* Submit Button CSS */
@@ -632,6 +668,12 @@ fieldset {
 }
 
 
+
+
+
+
+
+
 #contact-sec {
 	font-size: 64px;
 }
@@ -646,6 +688,11 @@ fieldset {
 	/* Remove as content will dictate height */
 	height: 700px;
 }
+
+
+
+
+
 
 /*Common page elements  */
 
@@ -682,6 +729,12 @@ fieldset {
 	margin-top: 80px;
 }
 
+
+
+
+
+
+
 .submit-2 {
 	position: relative;
 	height: 48px;
@@ -704,6 +757,7 @@ fieldset {
 	border-radius: 0%;
 	box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
 	-webkit-text-fill-color: white;
+	cursor:pointer;
 
   }
 
@@ -747,7 +801,7 @@ fieldset {
 /* gallery page */
 
   #gallery-hero-con {
-	background: url(../images/gallery-background-img2.jpg) no-repeat center;
+	background: url(../images/gallery-background-img2.jpg) no-repeat top;
 	width: 1920px;
 	height: auto;
   }
@@ -757,7 +811,7 @@ fieldset {
 	font-size: 38px;
 	-webkit-text-fill-color: #fff;
 	text-shadow: 2px 2px rgb(0, 0, 0);
-	margin-top: 90px;
+	margin-top: 180px;
 	
   }
 
@@ -768,12 +822,18 @@ fieldset {
 	margin-bottom: 30px;
 }
 
+#gallery{
+	padding-bottom: 40px;
+	padding-top:60px;
+}
+
 #gallery-controls {
 	margin-top: 200px;
 	grid-column: 6/8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+ 
 }
 
 .dot {
@@ -782,6 +842,7 @@ fieldset {
 	width: 30px;
 	border-radius: 50%;
 	margin: 5px;
+	margin-bottom: 25px;
   }
 
 
